@@ -59,8 +59,6 @@ class CascadeClassifier:
 		return CascadeClassifier()
 
 
-
-
 class FSClassifier:
 
 	def __init__(self, classifier, feature_selector, num_features = 100):
