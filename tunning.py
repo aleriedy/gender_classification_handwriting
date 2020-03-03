@@ -6,7 +6,6 @@ from sklearn.metrics import confusion_matrix
 from metrics import getKx2CVScores, getConfidences
 from sklearn import base
 
-
 def performGridSearchWithKx2CV(clf, X, y, params):
 
 	grid = list(ParameterGrid(params))
@@ -19,7 +18,6 @@ def performGridSearchWithKx2CV(clf, X, y, params):
 		print performances[-1]
 
 	return [grid, performances]
-
 
 def ROC( confidences, groundTruth, granularity = 0.1 ):
 
